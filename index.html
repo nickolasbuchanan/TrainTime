@@ -19,14 +19,14 @@
 
   <div class="container">
 
-    <div class="jumbotron" style="background-color:#eeeeee; color: white">
+    <div class="jumbotron" style="background-color:#A9A9A9; color: white">
       <h1 class="text-center">When's that train coming?!?!?</h1>
-      <h3 class="text-center">All aboard!!!</h3>
+      <h3 class="text-center">Get that @$$ in gear!!!</h3>
     </div>
 
     <div class= "row">
       <div class="col-lg-12">
-        <div class="panel panel-primary">
+        <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title"><strong>Current Train Schedule</strong></h3>
           </div>
@@ -51,7 +51,7 @@
     </div>
     <div class="row">
       <div class="col-lg-12">
-        <div class="panel panel-primary">
+        <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title"><strong>Add Train</strong></h3>
           </div>
@@ -59,19 +59,19 @@
               <form>
                 <div class="form-group">
                   <label for="">Train Name</label>
-                  <input type="text" class="form-control" name="trainNameInput">
+                  <input type="text" class="form-control" id="trainNameInput">
                 </div>
                 <div class="form-group">
                   <label for="">Destination</label>
-                  <input type="text" class="form-control" name="destinationInput">
+                  <input type="text" class="form-control" id="destinationInput">
                 </div>
                 <div class="form-group">
-                  <label for="">First Train Time</label>
-                  <input type="text" class="form-control" name="firstTrainInput">
+                  <label for="">First Train Time (HH:MM)</label>
+                  <input type="text" class="form-control" id="firstTrainInput">
                 </div>
                 <div class="form-group">
                   <label for="">Frequency (Min)</label>
-                  <input type="text" class="form-control" name="frequencyInput">
+                  <input type="text" class="form-control" id="frequencyInput">
                 </div>
                 <button type="submit" class="btn btn-primary" id="addTrainBtn">Submit</button>
               </form>
@@ -87,18 +87,7 @@
  <!--link to javaScript file in assets-->
 
 <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAt86Bgi5iQ9nOkZC24X_KpKgGfvTjad4Y",
-    authDomain: "traintime-efbc8.firebaseapp.com",
-    databaseURL: "https://traintime-efbc8.firebaseio.com",
-    projectId: "traintime-efbc8",
-    storageBucket: "",
-    messagingSenderId: "273365151017"
-  };
-  firebase.initializeApp(config);
-</script>
+
 <script src="assets/train.js"></script>
 </body>
 
